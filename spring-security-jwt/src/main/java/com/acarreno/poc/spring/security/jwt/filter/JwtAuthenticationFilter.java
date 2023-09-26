@@ -3,7 +3,6 @@ package com.acarreno.poc.spring.security.jwt.filter;
 import java.io.IOException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
