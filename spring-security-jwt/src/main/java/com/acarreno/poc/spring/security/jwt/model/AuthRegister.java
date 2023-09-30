@@ -5,9 +5,11 @@ import lombok.Data;
 
 @Data
 @Builder
-public class AuthRequest {
+public class AuthRegister {
 
   private String username;
-  private String password;  
+  private String password;
+  private String firstname;
+  private String lastname;
 
 }

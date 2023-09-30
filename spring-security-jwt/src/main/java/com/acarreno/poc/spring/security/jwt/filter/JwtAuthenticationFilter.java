@@ -25,6 +25,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
   }
 
+  /**
+   * 
+   * @param request
+   * @return
+   */
   private String getTokenByRequest(HttpServletRequest request) {
 
     String authorization = request.getHeader(HttpHeaders.AUTHORIZATION);

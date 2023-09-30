@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: sa
+    url: jdbc:sqlserver://localhost:1433;databaseName=poc_spring_security;trustServerCertificate=true
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: Test123*
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      #ddl-auto: none

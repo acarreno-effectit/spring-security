@@ -23,6 +23,13 @@ public class SecurityConfig {
   // Different configurations
   // ------------------------
 
+  /**
+   * Security Filter using Default Form
+   * 
+   * @param http
+   * @return
+   * @throws Exception
+   */
   private SecurityFilterChain buildSecurityFilterChainWithForm(HttpSecurity http) throws Exception {
     return http
         .csrf(csrf -> csrf.disable()).authorizeHttpRequests(authRequest -> authRequest
