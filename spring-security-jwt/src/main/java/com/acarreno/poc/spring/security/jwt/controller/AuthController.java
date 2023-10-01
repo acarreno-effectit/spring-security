@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.acarreno.poc.spring.security.jwt.model.AuthRegister;
+import com.acarreno.poc.spring.security.jwt.model.RegisterRequest;
 import com.acarreno.poc.spring.security.jwt.model.AuthRequest;
 import com.acarreno.poc.spring.security.jwt.model.AuthResponse;
 import com.acarreno.poc.spring.security.jwt.service.AuthService;
@@ -26,9 +26,9 @@ public class AuthController {
   }
 
   @PostMapping("/register-user")
-  public ResponseEntity<AuthResponse> registerUser(@RequestBody AuthRegister authRegister) {
+  public ResponseEntity<AuthResponse> registerUser(@RequestBody RegisterRequest registerRequest) {
 
-    return ResponseEntity.ok(authService.registerUser(authRegister));
+    return ResponseEntity.ok(authService.registerUser(registerRequest));
   }
 
 }

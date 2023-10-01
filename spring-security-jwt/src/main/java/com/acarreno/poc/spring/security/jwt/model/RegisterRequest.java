@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class AuthRegister {
+public class RegisterRequest {
 
   private String username;
   private String password;
